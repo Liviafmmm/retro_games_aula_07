@@ -1,5 +1,5 @@
-
-create database if not exists db_retrogames;
+drop database if exists db_retrogames;
+create database db_retrogames;
 use db_retrogames;
 
 create table jogos (
