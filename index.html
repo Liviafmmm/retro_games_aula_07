@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroGames - Clássicos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="Logo RetroGames" class="logo">
+        <h1>RETROGAMES</h1>
+        <p>Os melhores jogos clássicos!</p>
+        <span class="frase">INSERT COIN • PLAYER 1</span>
+    </header>
+
+    <main class="container">
+
+        <div class="titulo-secao">
+            <div>
+                <h2>Nosso catálogo</h2>
+                <p>Reviva os clássicos que marcaram época!</p>
+            </div>
+
+            <button id="btnCadastrar" type="button">+ Cadastrar Jogo</button>
+        </div>
+
+        <section id="listarJogos" class="listar-jogos">
+            <p id="mensagemVazia">🎮 Nenhum jogo cadastrado ainda!</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>RETROGAMES © 2026</p>
+        <p>Tudo fica melhor com o app da Lívia!</p>
+    </footer>
+
+    <dialog id="modalCadastro">
+        <h2>NOVO JOGO</h2>
+
+        <form id="formJogo">
+            <label for="jogo">Nome do jogo</label>
+            <input type="text" id="jogo" placeholder="Ex: Super Mario Bros." required>
+
+            <label for="desenvolvedora">Desenvolvedora</label>
+            <input type="text" id="desenvolvedora" placeholder="Nome da desenvolvedora" required>
+
+            <label for="genero">Gênero</label>
+            <input type="text" id="genero" placeholder="Ex: Aventura" required>
+
+            <label for="plataforma">Plataforma</label>
+            <input type="text" id="plataforma" placeholder="Ex: Nintendo" required>
+
+            <label for="imagem">URL da imagem do jogo</label>
+            <input type="url" id="imagem" placeholder="https://site.com/logo.jpg" required>
+
+            <label for="preco">Preço (R$)</label>
+            <input type="number" id="preco" min="0.01" step="0.01" placeholder="99.90" required>
+
+            <div class="acoes">
+                <button type="button" id="btnCancelar" class="cancelar">Cancelar</button>
+                <button type="submit">Salvar jogo</button>
+            </div>
+        </form>
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
